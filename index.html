@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- Kevin Duong -->
 <!-- Check List
 Doctype x
 HTML Tags x
@@ -15,21 +15,28 @@ Add an alert x -->
 <html> 
 
     <head>  
+        <script src="timer.js"></script>
+        <link rel="stylesheet" href="style.css">
         <title>
     Kevin's HTML Website Assignment
         </title>
         <script>
-            alert("Did you mean to hit refresh?")
+            //alert("Did you mean to hit refresh?")
+            // Also links js file 
+            
         </script>
+
     </head>
     
     <body>
         <h1 style=" color: rgb(17, 209, 184);">
             About Me
         </h1>
-        <img src="cat.jpg">
+        <img src="cat.jpg" width="33%" height="33%">
+    
         <br>
-        <script>
+
+       <script>
             document.write("I don't get much sleep");
         </script>
         <p>
@@ -37,9 +44,10 @@ Add an alert x -->
         </p>
 
     <br>
-
-    <button>Start</button>
-    <button>Stop</button>
+    <div id="countdownstatus">Countdown Status</div>
+    <br>
+   
+    <button onclick="countdowntimer();" class="button">Start Timer</button>
     </body>
     
 </html>

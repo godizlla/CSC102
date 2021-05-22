@@ -1,0 +1,20 @@
+/*
+To Do List
+Make the page look good*/
+
+body{
+    background-color: rgb(0, 0, 0)
+    ;
+}
+
+p {color: white}
+
+div{color: white}
+.button{
+    background-color: cornflowerblue;
+    width: 33%;
+    height: 33px;
+    border-radius: 15px;
+    border-color: darkblue;
+
+}
