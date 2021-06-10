@@ -91,27 +91,27 @@ function btrTimer(){
 function btrTimer(){
     console.log("btrTimer if's starts")
     var currTime = 50;
-    for(var i = 0; i < 11; i++){
-        if(i == 10){
+    for(var i = 0; i < 51; i++){
+        if(i == 50){
             //  at end says blast off
             setTimeout(function(){
                 document.getElementById("countdownstatus").innerHTML = "Blastoff!!";
-                currTime = currTime -5;
-            },5000 * i);
-        } else if (i > 4){
+                currTime = currTime -1;
+            },1000 * i);
+        } else if (i > 25){
             //less than half says less then half and current time
             setTimeout(function(){
             document.getElementById("countdownstatus").innerHTML = "Warning Less than ½ way to launch, time left = " + currTime;
-            currTime = currTime -5;
-            },5000 * i);
+            currTime = currTime -1;
+            },1000 * i);
 
         }
         else {
             // if not at zero or at half says current time
             setTimeout(function(){
                 document.getElementById("countdownstatus").innerHTML = currTime;
-                currTime = currTime -5;
-                },5000 * i);
+                currTime = currTime -1;
+                },1000 * i);
         }
     }
 }
