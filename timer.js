@@ -115,3 +115,10 @@ function btrTimer(){
         }
     }
 }
+
+function start(){
+    console.log("start button clicked")
+}
+function stop(){
+    console.log("Stop button clicked")
+}
