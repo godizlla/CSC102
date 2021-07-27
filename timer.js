@@ -40,6 +40,8 @@ outputs message when the current time = 0 x */
 }
 */
 
+
+//Aduio For winning at craps 
 /* Dice Roll  */
 
 function playcraps(){
@@ -48,6 +50,7 @@ function playcraps(){
     // To Id the two diffent Dice
     var die1 = Math.ceil(Math.random() * 6);
     var die2 = Math.ceil(Math.random() * 6);
+    var win = new Audio("Final Fantasy VII - Victory.mp3");
     //Replaces the elements on the html file with the dice numbers
     document.getElementById("die1Res").innerHTML = die1;
     document.getElementById("die2Res").innerHTML = die2;
@@ -61,11 +64,14 @@ function playcraps(){
         document.getElementById("crapsStatus").innerHTML = "Craps! You Lose";
         //Replaces the elements on the html file with the win condition 
     }else if (die1 == die2 && die1 % 2 ==0){
-        document.getElementById("crapsStatus").innerHTML = "Double You Win";
+        document.getElementById("crapsStatus").innerHTML = "Double You Win" ;
+        win.play();
+
     }else {
         ////Replaces the elements on the html file with retry condition
-        document.getElementById("crapsStatus").innerHTML = "You didn't win or lose roll again"
+        document.getElementById("crapsStatus").innerHTML = "You didn't win or lose roll again ";
     }
+
 }
 
 // Better Timer
@@ -116,9 +122,3 @@ function btrTimer(){
     }
 }
 
-function start(){
-    console.log("start button clicked")
-}
-function stop(){
-    console.log("Stop button clicked")
-}
